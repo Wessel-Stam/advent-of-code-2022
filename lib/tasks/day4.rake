@@ -1,7 +1,7 @@
 #check if 2 ranges overlap 
 namespace :assignment do
     task read: :environment do
-        ranges = open("lib/tasks/day4.txt").read
+        ranges = open("lib/data/day4.txt").read
         
         ranges.split(",").map do |range|
             # # check if 2 ranges overlap

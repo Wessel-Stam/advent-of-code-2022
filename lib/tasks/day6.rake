@@ -8,7 +8,7 @@ namespace :signal do
        string = ''
 
        # get the base string from the file
-       signal = File.read('lib/tasks/day6.txt')
+       signal = File.read('lib/data/day6.txt')
        # iterate through the string
        while right < signal.length - 1 do
          if string.length == 14

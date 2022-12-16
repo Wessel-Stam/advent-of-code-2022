@@ -4,7 +4,7 @@ namespace :crates do
      crates = [[], [], [], [], [], [], [], [], []]
      mapping = [1, 5, 9, 13, 17, 21, 25, 29, 33]
      
-     File.readlines('lib/tasks/data.txt').each do |line|
+     File.readlines('lib/data/data.txt').each do |line|
        # Store the layout of the crates
        if line.include?('[')
          mapping.each_with_index do |v, k|

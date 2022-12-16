@@ -2,7 +2,7 @@ namespace :calorie do
     task read: :environment do
        # Part 1
         elf = []
-      elf = open("lib/tasks/input.txt").read
+      elf = open("lib/data/input.txt").read
         elf = elf.split("\n\n")
 
         result = elf.map do |elfs|

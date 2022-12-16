@@ -1,6 +1,6 @@
 namespace :game do
     task read: :environment do
-      strategy = open("lib/tasks/day2.txt").read
+      strategy = open("lib/data/day2.txt").read
       # Part 1
       mappings = {
         "A" => 0,

@@ -2,7 +2,7 @@ namespace :rucksack do
     task read: :environment do
         total = []
        # Part 1
-    inventory = open("lib/tasks/day3.txt").read
+    inventory = open("lib/data/day3.txt").read
     cases = ('a'..'z').to_a + ('A'..'Z').to_a
     inventory.split("\n").map do |inventorys|
       backpack = inventorys.chars.each_slice(inventorys.length / 2).map(&:join)

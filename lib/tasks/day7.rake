@@ -1,7 +1,7 @@
 namespace :file do
     task read: :environment do
         # Part 1
-        data = File.readlines('lib/tasks/day7.txt')
+        data = File.readlines('lib/data/day7.txt')
         array = []
         dir_sizes = Hash.new { |h, k| h[k] = 0 }
         data 
